@@ -7,6 +7,7 @@
     niri = "niri";
     noctalia = "noctalia";
     nvim = "nvim";
+    tmux = "tmux";
   };
 in {
   xdg.configFile =

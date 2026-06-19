@@ -72,7 +72,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+D hotkey-overlay-title="Run Application Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Shift+B hotkey-overlay-title="Open Firefox" { spawn "firefox"; }
     Mod+Shift+Alt+B hotkey-overlay-title="Open Firefox private" { spawn "firefox" "--private-window"; }
 

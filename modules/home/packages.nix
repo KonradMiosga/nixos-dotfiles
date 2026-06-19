@@ -1,14 +1,13 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    alejandra
     alacritty
     codex
     fuzzel
+    fzf
     gcc
     git
     lazygit
-    nil
-    nixpkgs-fmt
+    tmux
     noctalia-shell
     nodejs
     playerctl
@@ -17,5 +16,6 @@
     vim
     wget
     xcursor-themes
+    zig
   ];
 }

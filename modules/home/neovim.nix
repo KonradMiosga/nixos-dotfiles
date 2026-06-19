@@ -12,12 +12,14 @@
         gruvbox-nvim
         harpoon2
         nvim-cmp
+        nvim-highlight-colors
         nvim-lspconfig
         (nvim-treesitter.withPlugins (parsers:
           with parsers; [
             c
             cpp
             lua
+            nix
             query
             typst
             zig
@@ -31,8 +33,11 @@
   };
 in {
   home.packages = with pkgs; [
+    alejandra
     clang-tools
+    lua-language-server
     neovim
+    nil
     tinymist
     typst
     zls

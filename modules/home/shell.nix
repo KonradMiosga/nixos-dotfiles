@@ -6,7 +6,11 @@
       vim = "nvim";
     };
     initExtra = ''
-      export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"
+      PS1=$'\[\033[0;34m\]\u@\h\[\033[0m\] \[\033[0;32m\]\w\[\033[0m\] \[\033[0;35m\]\$\[\033[0m\] '
+
+      if [ -x "$HOME/.local/bin/tmux-sessionizer" ]; then
+        bind -x '"\C-f": "$HOME/.local/bin/tmux-sessionizer"'
+      fi
     '';
   };
 }

@@ -72,7 +72,45 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end,
 })
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+    group = vim.api.nvim_create_augroup("my.lsp.format", {}),
+    pattern = "*.nix",
+    callback = function(args)
+        vim.lsp.buf.format({
+            bufnr = args.buf,
+            timeout_ms = 2000,
+            filter = function(client)
+                return client.name == "nil_ls"
+            end,
+        })
+    end,
+})
+
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+vim.lsp.config.lua_ls = {
+    cmd = { "lua-language-server" },
+    filetypes = { "lua" },
+    root_markers = { ".luarc.json", ".luarc.jsonc", ".git" },
+    capabilities = capabilities,
+    settings = {
+        Lua = {
+            runtime = {
+                version = "LuaJIT",
+            },
+            diagnostics = {
+                globals = { "vim" },
+            },
+            workspace = {
+                checkThirdParty = false,
+                library = vim.api.nvim_get_runtime_file("", true),
+            },
+            telemetry = {
+                enable = false,
+            },
+        },
+    },
+}
 
 vim.lsp.config.clangd = {
     cmd = { "clangd" },
@@ -103,6 +141,20 @@ vim.lsp.config.zls = {
     },
 }
 
+vim.lsp.config.nil_ls = {
+    cmd = { "nil" },
+    filetypes = { "nix" },
+    root_markers = { "flake.nix", "default.nix", ".git" },
+    capabilities = capabilities,
+    settings = {
+        ["nil"] = {
+            formatting = {
+                command = { "alejandra" },
+            },
+        },
+    },
+}
+
 vim.filetype.add({
     extension = {
         h = "c",
@@ -113,6 +165,7 @@ vim.filetype.add({
 vim.lsp.enable({
     "clangd",
     "lua_ls",
+    "nil_ls",
     "tinymist",
     "zls",
 })

@@ -6,6 +6,7 @@
     fuzzel
     gcc
     git
+    lazygit
     nil
     nixpkgs-fmt
     noctalia-shell

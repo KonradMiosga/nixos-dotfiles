@@ -13,7 +13,6 @@ in {
     builtins.mapAttrs
     (_name: subpath: {
       source = mkConfigLink "${dotfiles}/${subpath}";
-      recursive = true;
     })
     configDirs;
 }

@@ -1,0 +1,1 @@
+-- Tree-sitter itself is installed through Nix in modules/home/neovim.nix.

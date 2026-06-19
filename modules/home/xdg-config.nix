@@ -8,6 +8,7 @@
     noctalia = "noctalia";
     nvim = "nvim";
     tmux = "tmux";
+    tmux-sessionizer = "tmux-sessionizer";
   };
 in {
   xdg.configFile =

@@ -27,6 +27,7 @@
         oil-nvim
         plenary-nvim
         telescope-nvim
+        typst-preview-nvim
         undotree
       ];
     };
@@ -40,6 +41,7 @@ in {
     nil
     tinymist
     typst
+    websocat
     zls
   ];
 }

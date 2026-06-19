@@ -7,5 +7,7 @@
     ./modules/home/shell.nix
     ./modules/home/ssh.nix
     ./modules/home/xdg-config.nix
+    ./modules/home/zathura.nix
+    ./modules/home/yazi.nix
   ];
 }

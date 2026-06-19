@@ -6,7 +6,6 @@
     fuzzel
     gcc
     git
-    neovim
     nil
     nixpkgs-fmt
     noctalia-shell

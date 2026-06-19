@@ -3,6 +3,7 @@
   mkConfigLink = path: config.lib.file.mkOutOfStoreSymlink path;
 
   configDirs = {
+    alacritty = "alacritty";
     niri = "niri";
     noctalia = "noctalia";
     nvim = "nvim";

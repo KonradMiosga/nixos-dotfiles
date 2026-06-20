@@ -5,6 +5,12 @@ vim.keymap.set("n", "<leader>cd", "<cmd>Oil<CR>", { desc = "Open Oil" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- Alt Up/Down in vscode
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Better up/down
+
+vim.keymap.set({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { desc = "Down", expr = true, silent = true })
+
+vim.keymap.set({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
+
 vim.keymap.set("n", "J", "mzJ`z")       -- Remap joining lines
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- Keep cursor in place while moving up/down page
 vim.keymap.set("n", "<C-u>", "<C-u>zz")

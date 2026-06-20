@@ -20,6 +20,7 @@ set.hlsearch = false
 set.termguicolors = true
 set.background = "dark"
 set.signcolumn = "yes"
+set.wrap = false
 
 -- cursor line
 set.cursorline = true

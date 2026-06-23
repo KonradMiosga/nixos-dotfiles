@@ -49,12 +49,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
         map("n", "go", vim.lsp.buf.type_definition, "LSP type definition")
         map("n", "gr", vim.lsp.buf.references, "LSP references")
         map("n", "gs", vim.lsp.buf.signature_help, "LSP signature")
-        map("n", "gl", vim.diagnostic.open_float, "Line diagnostics")
+        map("n", "<leader>ld", vim.diagnostic.open_float, "Line diagnostics")
         map("n", "<F2>", vim.lsp.buf.rename, "LSP rename")
         map({ "n", "x" }, "<F3>", function()
             vim.lsp.buf.format({ async = true })
         end, "LSP format")
-        map("n", "<F4>", vim.lsp.buf.code_action, "LSP code action")
+        map("n", "<leader>ca", vim.lsp.buf.code_action, "LSP code action")
 
         if client:supports_method("textDocument/documentHighlight") then
             local group = vim.api.nvim_create_augroup("my.lsp.highlight", { clear = false })

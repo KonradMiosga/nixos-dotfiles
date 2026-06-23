@@ -21,6 +21,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
+-- Goto
+vim.keymap.set("n", "gl", "$", { desc = "Go to end of line" })
+vim.keymap.set("n", "gh", "^", { desc = "Go to start of line" })
 
 -- sometimes in insert mode, control-c doesn't exactly work like escape
 vim.keymap.set("i", "<C-c>", "<Esc>")

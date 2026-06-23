@@ -11,6 +11,7 @@
         cmp-path
         gruvbox-nvim
         harpoon2
+        lualine-nvim
         nvim-cmp
         nvim-highlight-colors
         nvim-lspconfig
@@ -24,6 +25,7 @@
             typst
             zig
           ]))
+        mini-nvim
         oil-nvim
         plenary-nvim
         telescope-nvim

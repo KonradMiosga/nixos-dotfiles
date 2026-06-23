@@ -6,8 +6,9 @@
     ./modules/home/packages.nix
     ./modules/home/shell.nix
     ./modules/home/ssh.nix
+    ./modules/vscode.nix
     ./modules/home/xdg-config.nix
-    ./modules/home/zathura.nix
     ./modules/home/yazi.nix
+    ./modules/home/zathura.nix
   ];
 }

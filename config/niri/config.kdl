@@ -12,6 +12,7 @@ input {
     }
 
     touchpad {
+        disabled-on-external-mouse
         tap
         natural-scroll
     }
@@ -35,7 +36,7 @@ layout {
         proportion 0.66667
     }
 
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.66667; }
 
     focus-ring {
         width 1.5

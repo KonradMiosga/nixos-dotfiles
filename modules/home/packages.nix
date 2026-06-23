@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  qml-niri,
+  ...
+}: {
   home.packages = with pkgs; [
     alacritty
     codex

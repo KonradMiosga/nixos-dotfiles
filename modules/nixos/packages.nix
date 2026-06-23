@@ -5,6 +5,5 @@
     wireplumber
     man-pages
     man-pages-posix
-    vscode
   ];
 }

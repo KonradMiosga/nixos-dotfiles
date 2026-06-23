@@ -18,6 +18,7 @@
     ripgrep
     tree
     vim
+    vscode
     wget
     xcursor-themes
     zig

@@ -1,8 +1,4 @@
-{
-  pkgs,
-  qml-niri,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     alacritty
     codex
@@ -11,6 +7,7 @@
     gcc
     git
     lazygit
+    libreoffice
     tmux
     noctalia-shell
     nodejs

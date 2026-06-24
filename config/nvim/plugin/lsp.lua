@@ -112,10 +112,17 @@ vim.lsp.config.lua_ls = {
     },
 }
 
+vim.lsp.config.ols = {
+    cmd = { "ols" },
+    filetypes = { "odin" },
+    root_markers = { "ols.json", "odin.mod", ".git" },
+    capabilities = capabilities,
+}
+
 vim.lsp.config.clangd = {
     cmd = { "clangd" },
     filetypes = { "c", "cpp", "objc", "objcpp" },
-    root_markers = { "compile_commands.json", ".clangd", "Makefile", ".git" },
+    root_markers = { "compile_commands.json", ".clangd", "Makefile", ".git" , "compile_flags.txt"},
     capabilities = capabilities,
 }
 
@@ -158,6 +165,7 @@ vim.lsp.config.nil_ls = {
 vim.filetype.add({
     extension = {
         h = "c",
+        odin = "odin",
         typ = "typst",
     },
 })
@@ -166,6 +174,7 @@ vim.lsp.enable({
     "clangd",
     "lua_ls",
     "nil_ls",
+    "ols",
     "tinymist",
     "zls",
 })

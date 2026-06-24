@@ -11,6 +11,7 @@
     tmux
     noctalia-shell
     nodejs
+    odin
     playerctl
     ripgrep
     tree

@@ -6,7 +6,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#scrappy";
+      nrs = "sudo nixos-rebuild switch --impure --flake ~/nixos-dotfiles#scrappy";
       vim = "nvim";
       lg = "lazygit";
       ll = "ls -la";

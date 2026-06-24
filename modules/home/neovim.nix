@@ -21,6 +21,7 @@
             cpp
             lua
             nix
+            odin
             query
             typst
             zig
@@ -41,6 +42,7 @@ in {
     lua-language-server
     neovim
     nil
+    ols
     tinymist
     typst
     websocat

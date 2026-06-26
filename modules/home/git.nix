@@ -3,8 +3,8 @@
     enable = true;
     settings = {
       user = {
-        name = "John Doe";
-        email = "johndoe@example.com";
+        name = "Konrad Miosga";
+        email = "konrad.miosga@gmail.com";
       };
       init.defaultBranch = "main";
     };

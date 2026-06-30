@@ -8,8 +8,8 @@
     plantuml
     wireplumber
   ];
-  # Use emacs overlay. Required for Emacs 28+.
-  # Use a commit SHA for a specific commit to prevent overlay rebuild every time (can be very long).
+
+  # Provides newer Emacs builds/packages for a manually installed Doom Emacs.
   nixpkgs.overlays = [
     (import (
       builtins.fetchTarball {

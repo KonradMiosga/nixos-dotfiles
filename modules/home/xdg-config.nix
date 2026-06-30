@@ -1,20 +1,20 @@
-{config, ...}: let
+{ config, ... }:
+let
   dotfiles = "${config.home.homeDirectory}/nixos-dotfiles/config";
   mkConfigLink = path: config.lib.file.mkOutOfStoreSymlink path;
 
   configDirs = {
     alacritty = "alacritty";
+    doom = "doom";
     niri = "niri";
     noctalia = "noctalia";
     nvim = "nvim";
     tmux = "tmux";
     tmux-sessionizer = "tmux-sessionizer";
   };
-in {
-  xdg.configFile =
-    builtins.mapAttrs
-    (_name: subpath: {
-      source = mkConfigLink "${dotfiles}/${subpath}";
-    })
-    configDirs;
+in
+{
+  xdg.configFile = builtins.mapAttrs (_name: subpath: {
+    source = mkConfigLink "${dotfiles}/${subpath}";
+  }) configDirs;
 }

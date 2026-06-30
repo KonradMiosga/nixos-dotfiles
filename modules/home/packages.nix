@@ -1,26 +1,48 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     alacritty
+    clang-tools
+    cmake
     codex
-    emacs
+    emacs-pgtk
+    emacsPackages.vterm
+    fd
     fuzzel
     fzf
     gcc
+    gdb
     git
+    glslang
+    glibc
+    gnumake
+    gnutls
+    ispell
     kdePackages.kdevelop
     lazygit
+    libgcc
+    libtool
+    libvterm
     libreoffice
+    lua-language-server
     tmux
+    nil
     nixfmt
     noctalia-shell
     nodejs
     odin
     ols
+    pandoc
     playerctl
     ripgrep
+    shellcheck
+    sqlite
     signal-desktop
     spotify
+    shfmt
+    tinymist
+    tree-sitter
     tree
+    typst
     vim
     vscode
     wget

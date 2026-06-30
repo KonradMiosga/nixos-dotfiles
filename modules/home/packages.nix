@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     alacritty
     codex
+    emacs
     fuzzel
     fzf
     gcc

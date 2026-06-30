@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     alacritty
     codex
@@ -6,18 +6,24 @@
     fzf
     gcc
     git
+    kdePackages.kdevelop
     lazygit
     libreoffice
     tmux
+    nixfmt
     noctalia-shell
     nodejs
     odin
+    ols
     playerctl
     ripgrep
+    signal-desktop
+    spotify
     tree
     vim
     vscode
     wget
+    wine64
     xcursor-themes
     zig
   ];

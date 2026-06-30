@@ -5,7 +5,6 @@
     lua-language-server
     neovim
     nil
-    ols
     stylua
     tinymist
     tree-sitter

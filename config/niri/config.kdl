@@ -23,8 +23,17 @@ input {
 cursor {
     xcursor-size 24
     hide-when-typing
-    hide-after-inactive-ms 1000
+    hide-after-inactive-ms 5000
 }
+gestures {
+    hot-corners { off; }
+}
+
+workspace "1" { }
+workspace "2" { }
+workspace "3" { }
+workspace "4" { }
+workspace "5" { }
 
 layout {
     gaps 5

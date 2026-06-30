@@ -1,7 +1,7 @@
 {
   "colorizeByProfile": false,
-  "showProfile": false,
-  "showBalancedIcon": false,
+  "showProfile": true,
+  "showBalancedIcon": true,
   "colorPowerSaver": "#fabd2f",
   "colorPerformance": "#fb4934"
 }

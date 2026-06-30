@@ -1,7 +1,8 @@
-{...}: {
+{ ... }: {
   imports = [
     ./modules/home/core.nix
     ./modules/home/cursor.nix
+    ./modules/home/doom-emacs.nix
     ./modules/home/git.nix
     ./modules/home/neovim.nix
     ./modules/home/packages.nix

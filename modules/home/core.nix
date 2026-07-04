@@ -3,7 +3,6 @@
   home.homeDirectory = "/home/copperplate";
   home.stateVersion = "26.05";
   home.sessionPath = [
-    "$HOME/.config/emacs/bin"
     "$HOME/.local/bin"
   ];
 

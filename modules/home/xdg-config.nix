@@ -5,10 +5,10 @@ let
 
   configDirs = {
     alacritty = "alacritty";
-    doom = "doom";
     niri = "niri";
     noctalia = "noctalia";
     nvim = "nvim";
+    "starship.toml" = "starship/starship.toml";
     tmux = "tmux";
     tmux-sessionizer = "tmux-sessionizer";
   };

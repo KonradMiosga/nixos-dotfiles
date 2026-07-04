@@ -4,8 +4,6 @@
     clang-tools
     cmake
     codex
-    emacs-pgtk
-    emacsPackages.vterm
     fd
     fuzzel
     fzf
@@ -17,11 +15,9 @@
     gnumake
     gnutls
     ispell
-    kdePackages.kdevelop
     lazygit
     libgcc
     libtool
-    libvterm
     libreoffice
     lua-language-server
     tmux
@@ -35,10 +31,9 @@
     playerctl
     ripgrep
     shellcheck
-    sqlite
     signal-desktop
     spotify
-    shfmt
+    starship
     tinymist
     tree-sitter
     tree
@@ -46,7 +41,6 @@
     vim
     vscode
     wget
-    wine64
     xcursor-themes
     zig
   ];

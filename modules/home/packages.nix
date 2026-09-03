@@ -4,6 +4,7 @@
     clang-tools
     cmake
     codex
+    colmena
     fd
     fuzzel
     fzf

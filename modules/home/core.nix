@@ -5,6 +5,4 @@
   home.sessionPath = [
     "$HOME/.local/bin"
   ];
-
-  programs.git.enable = true;
 }

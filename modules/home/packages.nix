@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     alacritty
-    clang-tools
     cmake
     codex
     colmena
@@ -10,7 +9,6 @@
     fzf
     gcc
     gdb
-    git
     glslang
     glibc
     gnumake
@@ -20,9 +18,7 @@
     libgcc
     libtool
     libreoffice
-    lua-language-server
     tmux
-    nil
     nixfmt
     noctalia-shell
     nodejs
@@ -35,10 +31,7 @@
     signal-desktop
     spotify
     starship
-    tinymist
-    tree-sitter
     tree
-    typst
     vim
     vscode
     wget

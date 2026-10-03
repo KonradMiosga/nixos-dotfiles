@@ -10,26 +10,34 @@
 
   outputs =
     {
-      self,
       nixpkgs,
       home-manager,
       ...
     }:
+    let
+      mkHost =
+        hostModule:
+        nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./configuration.nix
+            hostModule
+            home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.copperplate = import ./home.nix;
+                backupFileExtension = "backup";
+              };
+            }
+          ];
+        };
+    in
     {
-      nixosConfigurations.scrappy = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.copperplate = import ./home.nix;
-              backupFileExtension = "backup";
-            };
-          }
-        ];
+      nixosConfigurations = {
+        scrappy = mkHost ./hosts/scrappy;
+        junkpile = mkHost ./hosts/junkpile;
       };
     };
 }

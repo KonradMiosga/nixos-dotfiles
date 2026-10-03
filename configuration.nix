@@ -1,13 +1,11 @@
-{...}: {
+{ ... }: {
   imports = [
-    /etc/nixos/hardware-configuration.nix
     ./modules/nixos/boot.nix
     ./modules/nixos/desktop.nix
     ./modules/nixos/hardware.nix
     ./modules/nixos/networking.nix
     ./modules/nixos/nix.nix
     ./modules/nixos/packages.nix
-    ./modules/nixos/power.nix
     ./modules/nixos/users.nix
   ];
 

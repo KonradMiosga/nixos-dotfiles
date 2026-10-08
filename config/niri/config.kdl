@@ -82,9 +82,12 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Space hotkey-overlay-title="Open Noctalia Launcher" {
+        spawn "noctalia-shell" "ipc" "call" "launcher" "toggle";
+    }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+Shift+B hotkey-overlay-title="Open Firefox" { spawn "firefox"; }
-    Mod+Shift+Alt+B hotkey-overlay-title="Open Firefox private" { spawn "firefox" "--private-window"; }
+    Mod+Shift+B hotkey-overlay-title="Open Chrome" { spawn "google-chrome-stable"; }
+    Mod+Shift+Alt+B hotkey-overlay-title="Open Chrome incognito" { spawn "google-chrome-stable" "--incognito"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 

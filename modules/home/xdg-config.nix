@@ -17,4 +17,14 @@ in
   xdg.configFile = builtins.mapAttrs (_name: subpath: {
     source = mkConfigLink "${dotfiles}/${subpath}";
   }) configDirs;
+
+  xdg.mimeApps = {
+    enable = true;
+
+    defaultApplications = {
+      "text/html" = [ "google-chrome.desktop" ];
+      "x-scheme-handler/http" = [ "google-chrome.desktop" ];
+      "x-scheme-handler/https" = [ "google-chrome.desktop" ];
+    };
+  };
 }

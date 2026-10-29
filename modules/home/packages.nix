@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     alacritty
+    ausweisapp
     cmake
     codex
     colmena

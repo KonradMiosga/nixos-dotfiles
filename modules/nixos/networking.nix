@@ -6,4 +6,6 @@
     openFirewall = true;
   };
 
+  networking.firewall.allowedUDPPorts = [ 24727 ];
+
 }

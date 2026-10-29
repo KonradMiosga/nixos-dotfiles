@@ -17,7 +17,6 @@
     lazygit
     libgcc
     libtool
-    libreoffice
     tmux
     nixfmt
     noctalia-shell

@@ -17,12 +17,11 @@
     lazygit
     libgcc
     libtool
+    localsend
     tmux
     nixfmt
     noctalia-shell
     nodejs
-    odin
-    ols
     pandoc
     playerctl
     ripgrep
@@ -35,6 +34,5 @@
     vscode
     wget
     xcursor-themes
-    zig
   ];
 }

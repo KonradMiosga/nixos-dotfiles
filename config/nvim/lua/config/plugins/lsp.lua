@@ -34,6 +34,8 @@ return {
 		vim.lsp.enable("lua_ls")
 
 		vim.lsp.enable("nil_ls")
+		vim.lsp.enable("clangd")
+		vim.lsp.enable("zls")
 
 		vim.diagnostic.config({
 			virtual_text = {
@@ -56,6 +58,7 @@ return {
 
 		vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 		vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+		vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions" })
 		vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Open diagnostics float" })
 	end,
 }

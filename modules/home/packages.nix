@@ -32,7 +32,6 @@
     starship
     tree
     vim
-    vscode
     wget
     xcursor-themes
   ];

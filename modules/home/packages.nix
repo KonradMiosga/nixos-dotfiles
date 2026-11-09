@@ -20,6 +20,7 @@
     libtool
     localsend
     tmux
+    nautilus
     nixfmt
     noctalia-shell
     nodejs

@@ -4,7 +4,6 @@
     google-chrome
     lm_sensors
     man-pages
-    man-pages-posix
     wireplumber
   ];
 }

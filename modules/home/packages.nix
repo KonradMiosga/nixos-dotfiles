@@ -6,7 +6,6 @@
     codex
     colmena
     fd
-    fuzzel
     fzf
     gcc
     gdb
@@ -20,6 +19,7 @@
     libtool
     localsend
     tmux
+    nautilus
     nixfmt
     noctalia-shell
     nodejs
@@ -32,7 +32,6 @@
     starship
     tree
     vim
-    vscode
     wget
     xcursor-themes
   ];

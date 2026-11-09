@@ -4,7 +4,7 @@ input {
         repeat-rate 35
 
         xkb {
-            layout "eu"
+            layout "de"
             options "caps:ctrl_modifier"
         }
 
@@ -40,12 +40,14 @@ layout {
     center-focused-column "never"
 
     preset-column-widths {
-        proportion 0.33333
+        // proportion 0.33333
         proportion 0.5
-        proportion 0.66667
+        // proportion 0.66667
+        proportion 1.0
     }
 
-    default-column-width { proportion 0.66667; }
+    // default-column-width { proportion 0.66667; }
+    default-column-width { proportion 1.0; }
 
     focus-ring {
         width 1.5
@@ -78,6 +80,11 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+    open-floating true
+}
+
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
@@ -85,7 +92,10 @@ binds {
     Mod+Space hotkey-overlay-title="Open Noctalia Launcher" {
         spawn "noctalia-shell" "ipc" "call" "launcher" "toggle";
     }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Escape hotkey-overlay-title="Open Noctalia Session Menu" {
+        spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle";
+    }
+    Mod+E hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
     Mod+Shift+B hotkey-overlay-title="Open Chrome" { spawn "google-chrome-stable"; }
     Mod+Shift+Alt+B hotkey-overlay-title="Open Chrome incognito" { spawn "google-chrome-stable" "--incognito"; }
 
@@ -227,7 +237,7 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
-    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    // Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }

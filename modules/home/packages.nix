@@ -6,7 +6,6 @@
     codex
     colmena
     fd
-    fuzzel
     fzf
     gcc
     gdb

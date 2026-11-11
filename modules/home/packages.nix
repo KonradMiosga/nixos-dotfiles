@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   home.packages = with pkgs; [
     alacritty
     ausweisapp
@@ -21,7 +21,7 @@
     tmux
     nautilus
     nixfmt
-    noctalia-shell
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     nodejs
     pandoc
     playerctl

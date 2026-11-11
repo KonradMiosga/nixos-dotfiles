@@ -60,7 +60,7 @@ layout {
     }
 }
 
-spawn-at-startup "noctalia-shell"
+spawn-at-startup "noctalia"
 
 hotkey-overlay {
     skip-at-startup
@@ -90,10 +90,10 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+Space hotkey-overlay-title="Open Noctalia Launcher" {
-        spawn "noctalia-shell" "ipc" "call" "launcher" "toggle";
+        spawn "noctalia" "msg" "panel-toggle" "launcher";
     }
     Mod+Escape hotkey-overlay-title="Open Noctalia Session Menu" {
-        spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle";
+        spawn "noctalia" "msg" "panel-toggle" "session";
     }
     Mod+E hotkey-overlay-title="Open Nautilus" { spawn "nautilus"; }
     Mod+Shift+B hotkey-overlay-title="Open Chrome" { spawn "google-chrome-stable"; }

@@ -60,9 +60,26 @@ shadow = false
 auto_hide = false
 reserve_space = true
 capsule = false
-start = ["launcher", "system-monitor", "workspaces"]
+start = ["launcher", "cpu-usage", "cpu-temp", "workspaces"]
 center = ["clock"]
 end = ["tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+
+[widget.cpu-usage]
+type = "sysmon"
+stat = "cpu_usage"
+show_value = true
+
+[widget.cpu-temp]
+type = "sysmon"
+stat = "cpu_temp"
+show_value = true
+
+[widget.battery]
+type = "battery"
+device = "BAT0"
+display_mode = "glyph"
+show_label = true
+label_content = "percent"
 
 [dock]
 enabled = false

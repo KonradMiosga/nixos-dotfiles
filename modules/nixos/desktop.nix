@@ -4,14 +4,11 @@
   programs.firefox.enable = true;
   programs.niri.enable = true;
 
+  security.rtkit.enable = true;
+
   services.pipewire = {
     enable = true;
     pulse.enable = true;
-    wireplumber.extraConfig."10-disable-bluetooth-autoswitch" = {
-      "wireplumber.settings" = {
-        "bluetooth.autoswitch-to-headset-profile" = false;
-      };
-    };
   };
 
   fonts.packages = with pkgs; [

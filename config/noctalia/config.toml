@@ -1,0 +1,79 @@
+# Noctalia v5 configuration, adapted from the previous v4 setup. Settings
+# changed through the GUI are stored as overrides in
+# ~/.local/state/noctalia/settings.toml.
+
+[shell]
+telemetry_enabled = false
+font_family = "JetBrainsMono Nerd Font"
+time_format = "{:%H:%M}"
+date_format = "%a, %b %d"
+corner_radius_scale = 1.0
+
+[shell.panel]
+launcher_placement = "floating"
+launcher_position = "center"
+control_center_placement = "attached"
+wallpaper_placement = "attached"
+session_placement = "attached"
+
+[shell.launcher]
+layout = "simple"
+categories = true
+compact = false
+sort_by_usage = true
+
+[wallpaper]
+enabled = true
+directory = "/home/copperplate/Pictures/Wallpapers"
+fill_mode = "crop"
+fill_color = "#000000"
+transition_duration = 1500
+edge_smoothness = 0.05
+transition_on_startup = false
+sync_transitions = true
+
+[wallpaper.default]
+path = "/home/copperplate/Pictures/Wallpapers/mustacho.png"
+
+[wallpaper.automation]
+enabled = false
+interval_seconds = 300
+order = "random"
+recursive = true
+
+[theme]
+mode = "dark"
+source = "builtin"
+builtin = "Gruvbox"
+
+[bar.main]
+position = "top"
+thickness = 34
+background_opacity = 0.93
+radius = 12
+margin_ends = 4
+margin_edge = 4
+padding = 8
+widget_spacing = 6
+font_scale = 1.0
+shadow = false
+auto_hide = false
+reserve_space = true
+capsule = false
+start = ["launcher", "system-monitor", "workspaces"]
+center = ["clock"]
+end = ["tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+
+[dock]
+enabled = false
+
+[weather]
+enabled = true
+unit = "celsius"
+effects = true
+
+[location]
+auto_locate = true
+
+[bluetooth]
+connect_when_enabled = true

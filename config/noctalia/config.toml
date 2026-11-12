@@ -48,7 +48,7 @@ builtin = "Gruvbox"
 
 [bar.main]
 position = "top"
-thickness = 34
+thickness = 32
 background_opacity = 0.93
 radius = 12
 margin_ends = 4
@@ -60,9 +60,27 @@ shadow = false
 auto_hide = false
 reserve_space = true
 capsule = false
-start = ["launcher", "cpu-usage", "cpu-temp", "workspaces", "spacer", "media", "spacer"]
+start = [
+  "launcher",
+  "cpu-usage",
+  "cpu-temp",
+  "workspaces",
+  "spacer",
+  "media",
+  "spacer",
+]
 center = ["spacer", "clock", "spacer", "weather", "spacer"]
-end = ["tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+end = [
+  "tray",
+  "notifications",
+  "network",
+  "bluetooth",
+  "volume",
+  "brightness",
+  "battery",
+  "control-center",
+  "session",
+]
 
 [widget.spacer]
 expand = true
@@ -72,7 +90,7 @@ media = false
 
 [widget.media]
 artist_first = false
-art_size     = 24
+art_size = 24
 hide_when_no_media = true
 hide_when_idle = false
 max_length = 300
@@ -101,7 +119,7 @@ show_label = true
 label_content = "percent"
 
 [widget.weather]
-show_condition   = false
+show_condition = false
 
 [dock]
 enabled = false

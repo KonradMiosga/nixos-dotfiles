@@ -7,6 +7,7 @@ return {
 				cpp = { "clang_format" },
 				lua = { "stylua" },
 				nix = { "nixfmt" },
+				toml = { "taplo" },
 				zig = { "zigfmt" },
 			},
 			default_format_opts = {

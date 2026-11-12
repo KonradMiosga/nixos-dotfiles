@@ -60,9 +60,23 @@ shadow = false
 auto_hide = false
 reserve_space = true
 capsule = false
-start = ["launcher", "cpu-usage", "cpu-temp", "workspaces"]
-center = ["clock"]
+start = ["launcher", "cpu-usage", "cpu-temp", "workspaces", "spacer", "media", "spacer"]
+center = ["spacer", "clock", "spacer", "weather", "spacer"]
 end = ["tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+
+[widget.spacer]
+expand = true
+
+[osd.kinds]
+media = false
+
+[widget.media]
+artist_first = false
+art_size     = 24
+hide_when_no_media = true
+hide_when_idle = false
+max_length = 300
+title_scroll = "on_hover"
 
 [widget.cpu-usage]
 type = "sysmon"
@@ -74,12 +88,20 @@ type = "sysmon"
 stat = "cpu_temp"
 show_value = true
 
+[widget.clock]
+type = "clock"
+format = "{:%d.%m.%Y - %H:%M}"
+anchor = true
+
 [widget.battery]
 type = "battery"
 device = "BAT0"
 display_mode = "glyph"
 show_label = true
 label_content = "percent"
+
+[widget.weather]
+show_condition   = false
 
 [dock]
 enabled = false

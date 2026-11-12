@@ -134,3 +134,23 @@ auto_locate = true
 
 [bluetooth]
 connect_when_enabled = true
+
+[shell.session]
+grid = false
+show_shortcuts = true
+
+[[shell.session.actions]]
+action = "logout"
+enabled = true
+shortcut = "1"
+
+[[shell.session.actions]]
+action = "reboot"
+enabled = true
+shortcut = "2"
+
+[[shell.session.actions]]
+action = "shutdown"
+enabled = true
+shortcut = "3"
+variant = "destructive"

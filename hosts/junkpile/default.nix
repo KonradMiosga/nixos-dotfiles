@@ -4,6 +4,10 @@
     ./hardware.nix
   ];
 
+  home-manager.users.copperplate.imports = [
+    ./packages.nix
+  ];
+
   networking.hostName = "junkpile";
 
   programs.steam.enable = true;

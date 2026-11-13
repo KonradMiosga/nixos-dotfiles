@@ -6,7 +6,7 @@
         name = "Konrad Miosga";
         email = "konrad.miosga@gmail.com";
       };
-      init.defaultBranch = "main";
+      init.defaultBranch = "master";
     };
   };
 }

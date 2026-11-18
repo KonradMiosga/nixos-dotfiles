@@ -9,4 +9,10 @@
     EDITOR = "nvim";
     VISUAL = "nvim";
   };
+
+  services.udiskie = {
+    enable = true;
+    automount = true;
+    notify = true;
+  };
 }

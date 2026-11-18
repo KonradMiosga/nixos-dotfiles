@@ -14,6 +14,11 @@ return {
 	config = function()
 		require("fidget").setup({})
 
+		-- Advertise blink.cmp's completion capabilities to every LSP server.
+		vim.lsp.config("*", {
+			capabilities = require("blink.cmp").get_lsp_capabilities(),
+		})
+
 		---@module "lspconfig"
 		---@type vim.lsp.Config
 		local lua_ls_config = {

@@ -73,6 +73,11 @@ show_value = true
 type = "sysmon"
 stat = "cpu_temp"
 show_value = true
+highlight_color = "#fb4934"
+
+[system.monitor]
+cpu_temp_activity_threshold = 70
+cpu_temp_critical_threshold = 90
 
 [widget.battery]
 type = "battery"
@@ -94,3 +99,6 @@ auto_locate = true
 
 [bluetooth]
 connect_when_enabled = true
+
+[osd.kinds]
+media = false

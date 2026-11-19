@@ -10,6 +10,7 @@
   ];
 
   time.timeZone = "Europe/Berlin";
+  i18n.extraLocaleSettings.LC_TIME = "de_DE.UTF-8";
 
   documentation.man.cache.enable = false;
   # This option defines the first version of NixOS you have installed on this particular machine,

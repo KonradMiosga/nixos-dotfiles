@@ -9,6 +9,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-26.05";
+    nixpkgs-unstable.url = "nixpkgs/nixpkgs-unstable";
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";

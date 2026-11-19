@@ -5,6 +5,7 @@
     neovim
     nil
     stylua
+    taplo
     tree-sitter
     zig
     zls

@@ -5,4 +5,14 @@
   home.sessionPath = [
     "$HOME/.local/bin"
   ];
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
+
+  services.udiskie = {
+    enable = true;
+    automount = true;
+    notify = true;
+  };
 }

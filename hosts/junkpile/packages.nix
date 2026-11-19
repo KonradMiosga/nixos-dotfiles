@@ -3,6 +3,7 @@
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.bootdev-cli
     calibre
     go
+    librewolf
     xxd
   ];
 }

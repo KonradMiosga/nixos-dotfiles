@@ -170,8 +170,34 @@ label_content = "percent"
 show_label = true
 type = "battery"
 
-[bluetooth]
-connect_when_enabled = true
+[widget.clock]
+anchor = true
+format = "{:%d.%m.%Y - %H:%M}"
+type = "clock"
 
-[osd.kinds]
-media = false
+[widget.cpu-temp]
+show_value = true
+stat = "cpu_temp"
+type = "sysmon"
+
+[widget.cpu-usage]
+show_value = true
+stat = "cpu_usage"
+type = "sysmon"
+
+[widget.media]
+art_size = 24
+artist_first = false
+hide_when_idle = false
+hide_when_no_media = true
+max_length = 300
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+
+[widget.spacer]
+expand = true
+
+[widget.weather]
+show_condition = false

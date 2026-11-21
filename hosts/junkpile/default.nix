@@ -10,6 +10,11 @@
 
   networking.hostName = "junkpile";
 
+  hardware.logitech.wireless = {
+    enable = true;
+    enableGraphical = true;
+  };
+
   programs.steam.enable = true;
 
   environment.systemPackages = [

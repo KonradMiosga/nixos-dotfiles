@@ -6,6 +6,14 @@
 {
   hardware.enableAllFirmware = true;
 
+  hardware.bluetooth.settings = {
+    General = {
+      Experimental = true;
+      FastConnectable = true;
+    };
+    Policy.AutoEnable = true;
+  };
+
   boot.extraModprobeConfig = ''
     options hid_apple fnmode=2
   '';

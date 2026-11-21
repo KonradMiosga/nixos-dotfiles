@@ -18,6 +18,15 @@
       fi
 
       eval "$(starship init bash)"
+
+      mkcd() {
+        if [ "$#" -ne 1 ]; then
+          echo "usage: mkcd <directory>" >&2
+          return 2
+        fi
+
+        mkdir -p "$1" && cd "$1"
+      }
     '';
   };
 }

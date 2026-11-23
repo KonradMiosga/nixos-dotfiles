@@ -38,6 +38,7 @@ workspace "5" { }
 layout {
     gaps 5
     center-focused-column "never"
+    always-center-single-column
 
     preset-column-widths {
         // proportion 0.33333
@@ -47,7 +48,7 @@ layout {
     }
 
     // default-column-width { proportion 0.66667; }
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.5; }
 
     focus-ring {
         width 1.5
